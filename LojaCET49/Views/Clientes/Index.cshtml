@@ -1,10 +1,10 @@
-﻿@model IEnumerable<LojaCET49.Dados.Entidades.Produto>
+﻿@model IEnumerable<LojaCET49.Dados.Entidades.Cliente>
 
 @{
-    ViewData["Title"] = "Lista de todos os produtos";
+    ViewData["Title"] = "Index";
 }
 
-<h2>Lista de todos os produtos</h2>
+<h2>Lista de Clientes</h2>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -16,22 +16,25 @@
                 @Html.DisplayNameFor(model => model.Nome)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Preco)
+                @Html.DisplayNameFor(model => model.Morada)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.UrlDaImagem)
+                @Html.DisplayNameFor(model => model.Telefone)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.UltimaCompra)
+                @Html.DisplayNameFor(model => model.Email)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.UltimaVenda)
+                @Html.DisplayNameFor(model => model.Contribuinte)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Disponivel)
+                @Html.DisplayNameFor(model => model.DataNascimento)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Stock)
+                @Html.DisplayNameFor(model => model.Compra)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Valor)
             </th>
             <th></th>
         </tr>
@@ -43,22 +46,25 @@
                 @Html.DisplayFor(modelItem => item.Nome)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Preco)
+                @Html.DisplayFor(modelItem => item.Morada)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.UrlDaImagem)
+                @Html.DisplayFor(modelItem => item.Telefone)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.UltimaCompra)
+                @Html.DisplayFor(modelItem => item.Email)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.UltimaVenda)
+                @Html.DisplayFor(modelItem => item.Contribuinte)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Disponivel)
+                @Html.DisplayFor(modelItem => item.DataNascimento)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Stock)
+                @Html.DisplayFor(modelItem => item.Compra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Valor)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
